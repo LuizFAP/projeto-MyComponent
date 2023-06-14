@@ -1,8 +1,7 @@
 :root{
     --primary-color: ##ff7833;
     --secondary-color: #31333b;
-    --titulo-color: #a2a5af;
-    --background-color: 
+    --titulo-color: #a2a5af;    
    
 }
 
@@ -31,11 +30,43 @@ body{
 .main-header{
     flex: 0 0 26rem;
     background-color: var(--secondary-color);
+    
+   
+    
+    
 }
-.main-header li{
 
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
 }
-
+ul{
+    
+}
+ul li{
+    border-bottom: 1px solid #7B7B7B;
+    width: 21rem;
+    height: 6rem;
+    text-align: right;
+   
+    margin-right: 2.5rem;
+}
+ul li a{
+    display: block;
+    
+    font-size: 150%;
+    padding: 2.1rem;
+    
+}
+ul li a:hover{
+    background-color: #444856;
+    
+}
+ul li.active{
+    font-weight: bold;
+}
 .main{
     background-color: #444856;
     flex: 1 0;
@@ -43,4 +74,39 @@ body{
 
 a{
     color: inherit;
+    font-style: normal;
+}
+.main{
+    padding: 12.5rem;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.perfil{
+    width: 50%;
+    
+    margin: 90px 0 20px 110px;
+}
+
+h2, h3{
+    color: #ff7833;
+}
+
+.main-article1{
+    margin-top: 4rem;   
+}
+
+.main-article1__descricao{
+    line-height: 4;
+    margin-bottom: 2rem;
+}
+
+.adress__h3{
+    line-height: 4;
+}
+.adress__h3-a{
+    margin: 0 2rem;
+}
+.fa-brands{
+    font-size: 3rem;
+    margin: 0 2rem;
 }

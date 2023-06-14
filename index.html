@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@300;400;900&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
     <title>Projeto My Components</title>
 </head>
@@ -17,20 +16,20 @@
 <body>
 
     <header class="main-header">
-        <nav>
+        <nav class="header__nav">
             <a href="#">
-                <img src="./imagens/perfil.png" alt="foto de perfil">
+                <img src="./imagens/perfil.png" alt="foto de perfil" class="perfil">
             </a>
 
             <ul>
 
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="Tipografia.html">Tipografia</a></li>
                 <li><a href="Cards.html">Cards</a></li>
                 <li><a href="Listas.html">Listas</a></li>
-                <li><a href="formulário.html">formulário</a></li>
+                <li><a href="formulário.html">Formulário</a></li>
                 <li> <a href="Botões.html">Botões</a></li>
-                <li><a href="tabelas.html">tabelas</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
 
             </ul>
         </nav>
@@ -38,22 +37,22 @@
     <main class="main">
         <h1>My Component</h1>
 
-        <article>
+        <article class="main-article1">
             <h2>A sua área para armazenar seus códigos HTML E CSS</h2>
 
             <h3>Componetes criados por Luiz Fernando para o curso da <a href="https://serliv.com">Servliv</a></h3>
 
-            <p>Desenvolvedor e intrutor de tecnologias front-end. Apaixonado por ensinar e tranformar positivamente a vida das pessoas.</p>
+            <p class="main-article1__descricao">Desenvolvedor e intrutor de tecnologias front-end. Apaixonado por ensinar e tranformar positivamente a vida das pessoas.</p>
         </article>
 
         <address>
-            <h3>Venha conhecer nossas redes sociais</h3>
+            <h3 class="adress__h3">Venha conhecer nossas redes sociais</h3>
 
             <p>
-                <a href="#">YouTube</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-                <a href="#">Linkedin</a>
+                <a class="adress__h3-a " href="#"><i class="fa-brands fa-youtube"></i>YouTube</a>
+                <a class="adress__h3-a" href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                <a class="adress__h3-a" href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
+                <a class="adress__h3-a" href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
             </p>
         </address>
     </main>
