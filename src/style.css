@@ -87,8 +87,13 @@ a{
     margin: 90px 0 20px 110px;
 }
 
-h2, h3{
+p{
+    font-size: 1.6rem;
+}
+
+h2, h3, h4{
     color: #ff7833;
+    margin: 2rem 0;
 }
 
 .main-article1{
@@ -109,4 +114,16 @@ h2, h3{
 .fa-brands{
     font-size: 3rem;
     margin: 0 2rem;
+}
+
+/*pagina da tipografia*/
+
+.hightlight{
+    border-left: 1px solid #ff7833;
+    padding-left: 3.5rem;
+    margin-bottom: 4rem;
+}
+
+.underline{
+    text-decoration: underline;
 }
