@@ -29,10 +29,7 @@ body{
 
 .main-header{
     flex: 0 0 26rem;
-    background-color: var(--secondary-color);
-    
-   
-    
+    background-color: var(--secondary-color); 
     
 }
 
@@ -126,4 +123,62 @@ h2, h3, h4{
 
 .underline{
     text-decoration: underline;
+}
+/*pagina de cards*/
+
+.img1{
+    width: 74rem;
+}
+.descricao{
+    background: #31333b;
+    width: 74rem;
+    margin-top: -10px;
+    border: 1px solid transparent;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.duas-imagens{
+    display: flex;
+    width: 71rem;
+    gap: 2rem;
+}
+.duas-imagens__descricao__img{
+    width: 70rem;
+}
+
+.duas-imagens__descricao{
+    width: 100%;
+}
+
+.tres-imagens{
+    display: flex; 
+      
+    gap: 2rem;   
+    
+}
+.tres-imagens__descricao__img{
+    width: 46rem;
+}
+.tres-imagens__descricao{
+    width: 46rem;
+    background: #31333b;    
+    margin-top: -10px;
+    border: 1px solid transparent;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.quatro-imagens{
+    display: flex; 
+      
+    gap: 2rem;   
+}
+.quatro-imagens__descricao__img{
+    width: 34rem;
+}
+.quatro-imagens__descricao{
+    width: 100%;
+    background: #31333b;    
+    margin-top: -10px;
+    border: 1px solid transparent;
+    padding: 0 2rem 2rem 2rem;
 }
