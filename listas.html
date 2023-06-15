@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./src/normalize.css">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@300;400;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
+    <title>Projeto My Components</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="header__nav">
+            <a href="#">
+                <img src="./imagens/perfil.png" alt="foto de perfil" class="perfil">
+            </a>
+
+            <ul>
+
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="Tipografia.html">Tipografia</a></li>
+                <li><a href="Cards.html">Cards</a></li>
+                <li><a href="Listas.html">Listas</a></li>
+                <li><a href="formulário.html">Formulário</a></li>
+                <li> <a href="Botões.html">Botões</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>My Component</h1>
+
+        <article class="hightlight">
+            <h2>Listas</h2>
+            <p>Lista é um importante recurso de HTML, pois permite criarmos tópicos de textos para uma melhor
+                exemplificação de um determinado assunto. São recursos extremamente usados, inclusive quando nem
+                imaginamos que ele esta sendo usado, como no caso de menus.</p>
+        </article>
+
+        <section class="listas">
+            <article class="lista-nao-ordenada">
+                <h3>Não Ordenada</h3>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+
+                <h3>Não Ordenada</h3>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2
+                        <ul>
+                            <li>Item 2.1
+                                <ul>
+                                    <li>Item 2.2.1</li>
+                                    <li>Item 2.2.2</li>
+                                    <li>Item 2.2.3</li>
+                                </ul>
+                            </li>
+                            <li>Item 2.2</li>
+                        </ul>
+                    </li>
+                    <li>Item 3</li>
+                </ul>
+            </article>
+
+            <article class="lista-ordenada">
+                <h3>Ordenadas</h3>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+                <div class="alfabeto">
+                    <h3>Ordenadas</h3>
+                    <ol start="6">
+                        <li>Item 1</li>
+                        <li>Item 2
+                            <ol class="romano" reversed>
+                                <li>Item 2.1</li>
+                                <li>Item 2.2
+                                    <div class="alfabeto2">
+                                        <ol start="10">
+                                            <li>Item 2.2.1</li>
+                                            <li>Item 2.2.2</li>
+                                            <li>Item 2.2.3</li>
+                                        </ol>
+                                    </div>
+                                <li>Item 2.3</li>
+                            </ol>
+                        </li>
+                        <li>Item 3</li>
+                    </ol>
+                    
+                    
+                   
+                </div>
+            </article>
+
+            <article class="ambas">
+                <h3>Alternates</h3>
+                <ul>
+                    <li class="borda-bottom">Item 1</li>
+                    <li class="borda-bottom">Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+
+                <h3>Ambas</h3>
+                <ol class="merge">
+                    <li>Item 1</li>
+                    <li>Item 2
+                        <ul>
+                            <li><i class="fa-solid fa-face-smile"></i>Item 2.1</li>
+                            <li><i class="fa-solid fa-face-smile"></i>Item 2.2</li>
+                            <li><i class="fa-solid fa-face-smile"></i>Item 2.3</li>
+                        </ul>
+                    </li>
+                    
+                    <li>Item 3</li>
+                </ol>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

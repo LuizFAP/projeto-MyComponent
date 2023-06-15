@@ -1,135 +1,155 @@
-:root{
+:root {
     --primary-color: ##ff7833;
     --secondary-color: #31333b;
-    --titulo-color: #a2a5af;    
-   
+    --titulo-color: #a2a5af;
+
 }
 
 * {
     padding: 0;
     margin: 0;
     border: none;
-    list-style: none;
+
     box-sizing: border-box;
     text-decoration: none;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     display: flex;
     color: #e7e7e7;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
-    
-    
+
+
 }
 
-.main-header{
+.main-header {
     flex: 0 0 26rem;
-    background-color: var(--secondary-color); 
-    
+    background-color: var(--secondary-color);
+
 }
 
 nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    
+
 }
-ul{
-    
-}
-ul li{
+
+ul {}
+
+nav ul li {
     border-bottom: 1px solid #7B7B7B;
     width: 21rem;
     height: 6rem;
     text-align: right;
-   
+    list-style: none;
     margin-right: 2.5rem;
 }
-ul li a{
+
+ul li a {
     display: block;
-    
+
     font-size: 150%;
     padding: 2.1rem;
-    
+
 }
-ul li a:hover{
+
+ul li a:hover {
     background-color: #444856;
-    
+
 }
-ul li.active{
+
+ul li.active {
     font-weight: bold;
 }
-.main{
+
+.main {
     background-color: #444856;
     flex: 1 0;
 }
 
-a{
+a {
     color: inherit;
     font-style: normal;
 }
-.main{
+
+.main {
     padding: 12.5rem;
     font-size: 1.6rem;
     line-height: 2;
 }
-.perfil{
+
+.perfil {
     width: 50%;
-    
+
     margin: 90px 0 20px 110px;
 }
 
-p{
+p {
     font-size: 1.6rem;
 }
 
-h2, h3, h4{
+h2,
+h3,
+h4 {
     color: #ff7833;
     margin: 2rem 0;
 }
 
-.main-article1{
-    margin-top: 4rem;   
+.main-article1 {
+    margin-top: 4rem;
 }
 
-.main-article1__descricao{
+.main-article1__descricao {
     line-height: 4;
     margin-bottom: 2rem;
 }
 
-.adress__h3{
+.adress__h3 {
     line-height: 4;
 }
-.adress__h3-a{
+
+.adress__h3-a {
     margin: 0 2rem;
 }
-.fa-brands{
+
+.fa-brands {
     font-size: 3rem;
     margin: 0 2rem;
 }
 
+.fa-brands:hover {
+    color: #ff7833;
+}
+
+.adress__h3-a:hover {
+    color: #ff7833;
+}
+
 /*pagina da tipografia*/
 
-.hightlight{
+.hightlight {
     border-left: 1px solid #ff7833;
     padding-left: 3.5rem;
     margin-bottom: 4rem;
 }
 
-.underline{
+.underline {
     text-decoration: underline;
 }
+
 /*pagina de cards*/
 
-.img1{
+.img1 {
     width: 74rem;
 }
-.descricao{
+
+.descricao {
     background: #31333b;
     width: 74rem;
     margin-top: -10px;
@@ -137,48 +157,96 @@ h2, h3, h4{
     padding: 0 2rem 2rem 2rem;
 }
 
-.duas-imagens{
+.duas-imagens {
     display: flex;
     width: 71rem;
     gap: 2rem;
 }
-.duas-imagens__descricao__img{
+
+.duas-imagens__descricao__img {
     width: 70rem;
 }
 
-.duas-imagens__descricao{
+.duas-imagens__descricao {
     width: 100%;
 }
 
-.tres-imagens{
-    display: flex; 
-      
-    gap: 2rem;   
-    
+.tres-imagens {
+    display: flex;
+
+    gap: 2rem;
+
 }
-.tres-imagens__descricao__img{
+
+.tres-imagens__descricao__img {
     width: 46rem;
 }
-.tres-imagens__descricao{
+
+.tres-imagens__descricao {
     width: 46rem;
-    background: #31333b;    
+    background: #31333b;
     margin-top: -10px;
     border: 1px solid transparent;
     padding: 0 2rem 2rem 2rem;
 }
 
-.quatro-imagens{
-    display: flex; 
-      
-    gap: 2rem;   
+.quatro-imagens {
+    display: flex;
+
+    gap: 2rem;
 }
-.quatro-imagens__descricao__img{
+
+.quatro-imagens__descricao__img {
     width: 34rem;
 }
-.quatro-imagens__descricao{
+
+.quatro-imagens__descricao {
     width: 100%;
-    background: #31333b;    
+    background: #31333b;
     margin-top: -10px;
     border: 1px solid transparent;
     padding: 0 2rem 2rem 2rem;
+}
+
+/*pagina Listas*/
+.listas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-nao-ordenada ul li {
+    margin-left: 3rem;
+}
+
+.lista-ordenada ol li {
+    margin-left: 3rem;
+}
+
+.alfabeto ol li {
+    list-style: upper-alpha;
+
+}
+
+.alfabeto2 ol li {
+    list-style: lower-alpha !important;
+}
+
+.alfabeto ol li ol li{
+    list-style-type: upper-roman;
+}
+
+.ambas ul li {
+    list-style: none;
+}
+
+.borda-bottom {
+    border-bottom: 2px solid #e7e7e7;
+    width: 30rem;
+}
+.merge li{
+    margin-left: 3rem;
+}
+.fa-solid{
+    color: #ff9332;
+    margin-right: 5px;
 }
